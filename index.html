@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <nav id="navbar">
+    <header id="nav-header"><h1>How To: Pass this challenge</h1></header>
+    
+     <ul id="nav-title">
+<hr>    
+      <li>
+        <a href="#the_technical_documents_challenge" class="nav-link">The Technical Documents Challenge</a>
+      </li>
+   <hr>
+      <li>
+        <a href="#laying_the_framework" class="nav-link">Laying the Framework</a>
+      </li>
+   <hr><li>
+        <a href="#id_and_classes" class="nav-link">id and classes</a>
+      </li>
+   <hr>
+      <li>
+         <a href="#internal_links" class="nav-link">Internal Links</a>
+      </li>
+   <hr>
+      <li>
+          <a href="#layout_and_media_query" class="nav-link">Layout and Media Query</a>
+      </li>
+   </ul>
+ </nav>
+  <div>
+  <main id="main-doc">
+    
+<section class="main-section" id="the_technical_documents_challenge">
+  <header><h2>The Technical Documents Challenge</h2></header>
+  
+  <p>Welcome, front-end web developing hopeful, to one of the first of many challenges that you will encounter on FreeCodeCamp.org. If you have made it this far, then you already have a good deal of familiarity with the basics of HTML and CSS. Here, you get to combine all your newly acquired knowledge in creating your very own web page!</p>
+<p>Before we begin, let's go over the criteria you will need to meet in order to pass this challenge:
+<br></p>
+<blockquote style="font-family:monospace; font-size: 1.3em">
+  <ul>
+    <li><strong>User Story #1:</strong> I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation).</li>
+<li><strong>User Story #2:</strong> Within the #main-doc element, I can see several section elements, each with a class of main-section. There should be a minimum of 5.</li>
+<li><strong>User Story #3:</strong> The first element within each .main-section should be a header element which contains text that describes the topic of that section.</li>
+<li><strong>User Story #4:</strong> Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "Javascript and Java" should have a corresponding id="Javascript_and_Java").</li>
+<li><strong>User Story #5:</strong> The .main-section elements should contain at least 10 p elements total (not each).</li>
+<li><strong>User Story #6:</strong> The .main-section elements should contain at least 5 code elements total (not each).</li>
+<li><strong>User Story #7:</strong> The .main-section elements should contain at least 5 li items total (not each).</li>
+  <li><strong>User Story #8:</strong> I can see a nav element with a corresponding id="navbar".</li>
+<li><strong>User Story #9:</strong> The navbar element should contain one header element which contains text that describes the topic of the technical documentation.</li>
+<li><strong>User Story #10:</strong> Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section.</li>
+<li><strong>User Story #11:</strong> The header element in the navbar must come before any link (a) elements in the navbar.</li>
+<li><strong>User Story #12:</strong> Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world").</li>
+<li><strong>User Story #13:</strong> When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element (e.g. If I click on a nav-link element that contains the text "Hello world", the page navigates to a section element that has that id and contains the corresponding header.</li>
+<li><strong>User Story #14:</strong> On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.</li>
+    <li><strong>User Story #15:</strong> My Technical Documentation page should use at least one media query.</li>
+   </ul>
+  </blockquote>
+<p>
+You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the lessons have covered so far and you should get some practice with plain CSS. You can use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular, or Vue) <strong>are not recommended</strong> for this project, and using them is at your own risk.</p>
+  <p>Now that you know the criteria for success, let's get started! </p>
+    </section>
+    
+<section class="main-section" id="laying_the_framework">
+  <header><h2>Laying the Framework</h2></header>
+    <p>The first thing you will want to do is lay down the framework for your document. This means inputting all the necessary elements. For example, to fulfill <strong>User Story #1</strong> we need to include a <code>&lt;main&gt</code> element in our document. </p>
+  <p>Speaking of documents, don't forget to start yours off with  <code>&lt;!DOCTYPE html&gt</code> and <code>&lt;html&gt</code>. It's good to get in the habit of expecting these at the top of the page even if Codepen's HTML window can function without it.</p> 
+  <p>So, look through all the story lists and begin typing all those beautiful element names. Remember, that some elements are self-closing single tags while others need a partner pair.</p>
+    </section>
+    
+<section class="main-section" id="id_and_classes">
+  <header><h2>id and classes</h2></header>
+  
+  <p>Next, you want to attach the appropriate <code>id</code> and <code>class</code> values to your elements. If you're still struggling with knowing the difference between the two, think of each of your elements as students that are part of "Your Webpage" (in this analogy, that would be like a school). Each element must have a unique <strong>id</strong>, but multiple elements can belong to the same <strong>class</strong>.</p>
+<p>
+  In both our user stories and in CSS, we reference an id name with a hash (<strong>#</strong>) and a class with a period (<strong>.</strong>). <a href="#the_technical_documents_challenge" style="text-decoration:none; color: green">Look back at the User Stories above.</a> Which elements need an id and which ones need a class?</p>
+   </section>
+    
+<section class="main-section" id="internal_links">
+  <header><h2>Internal Links</h2></header>
+    <p>To fulfill <strong>User Story #10</strong>, we need to create internal links, or links that reference other parts of the same webpage. These self-referential links are different from <a href="https://www.youtube.com/watch?v=5n5zZDsUffs" target="_blank" style="text-decoration:none; color: green">external links that travel away from home</a>. In order to denote these links, each reference must be preceded by a hash symbol. The name of a link must match the corresponding id of the element to which it will go.</p>
+  <p>An alternative is to create  temporary dead links (<code>href="#"</code>), especially when you're still figuring out titles for each of your sections. That way, once you do have a section name, you can simply add to it. 
+</p>
+    </section>
+    
+<section class="main-section" id="layout_and_media_query">
+  <header><h2>Layout and Media Query</h2></header>
+    <p>Having the appropriate layout and media query will fulfill <strong>User Story #14</strong> and <strong>User Story #15</strong>. Specifically, you want to review the various <code>position</code> and <code>display</code> properties (and their potential values) mentioned in the <a href="https://learn.freecodecamp.org/" target="_blank" style="color: hsl(24, 25%, 20%)">FreeCodeCamp HTML5 and CSS challenges</a>.</p>
+  <p>There are many ways to fulfill these user stories, and below you might recognize a familiar friend! So, try your hand at creating your own technical document page. Most importantly, remember always to explore, test, and have fun!</p>
+    
+<div class="penguin">
+  <div class="penguin-bottom">
+    <div class="right-hand"></div>
+    <div class="left-hand"></div>
+    <div class="right-feet"></div>
+    <div class="left-feet"></div>
+  </div>
+  <div class="penguin-top">
+    <div class="right-cheek"></div>
+    <div class="left-cheek"></div>
+    <div class="belly"></div>
+    <div class="right-eye">
+      <div class="sparkle"></div>
+    </div>
+    <div class="left-eye">
+      <div class="sparkle"></div>
+    </div>
+    <div class="blush-right"></div>
+    <div class="blush-left"></div>
+    <div class="beak-top"></div>
+    <div class="beak-bottom"></div>
+  </div>
+</div>
+    </section>
+  </main>
+</html>
