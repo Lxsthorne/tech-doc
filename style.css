@@ -269,24 +269,44 @@ code{
     border-radius: 50%;
   }
   
-@media screen and (max-width: 600px){
-  #navbar{
-    position:fixed;
-    display: absolute;
+@media screen and (max-width: 800px){
+    #navbar{
+    position: fixed;
     top: 0px;
     left: 0px;
-    bottom: 0px;
-    width: 120px;
-    overflow: auto;
- }
- #nav-title, #nav-header{
-    padding: 5px ;
+    margin:0px;
+    padding-bottom: 0px;
+    height: 72px;
+    width: 100vw; 
+    border-bottom: ridge 3px green;
+   }
+ #nav-title {
+    padding:0px;
+    text-align: center;
+    line-height: 12px;
+    width: 100vw;
+    margin-top: 0px;
+    margin-left: -20px;
+    display: none;
+    background-color: white;
+    border-bottom: ridge 3px green;
    } 
- main{
-    display: relative;
-    margin-left: 0px;
-    padding-left: 200px;
-    overflow: auto;
+  label {
+    display: block;
+    cursor: pointer;
+  }
+ #main-doc{
+    width: 100vw;
+    padding-left: 24px;
+    margin: 0px;
+  }  
+  #main-doc section{
+    padding-top: 24px;
+  }
+ #toggle:checked + #nav-title {
+    display: block;      
+  }
+  #nav-title:active + #nav-title{
+    display: none;
   }
 }
-
