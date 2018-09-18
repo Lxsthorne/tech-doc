@@ -24,7 +24,7 @@ label {
   margin:-60px 18px 0px;  
   font-size: 36px;
   width: 36px;
-  line-height: 72px;
+  line-height: 48px;
   float: right;
   display: none;/* DESKTOP ONLY */
 }
@@ -288,10 +288,12 @@ code{
     left: 0px;
     margin:0px;
     padding-bottom: 0px;
-    height: 72px;
+    height: 80px;
     width: 100vw; 
     border-bottom: ridge 3px green;
    }
+  #navbar h1 {
+    max-width: 300px;
  #nav-title {
     padding:0px;
     text-align: center;
@@ -299,6 +301,7 @@ code{
     width: 100vw;
     margin-top: 0px;
     margin-left: -20px;
+    max-height: 144px;
     display: none;
     background-color: white;
     border-bottom: ridge 3px green;
@@ -316,9 +319,8 @@ code{
     padding-top: 24px;
   }
  #toggle:checked + #nav-title {
-    display: block;      
-  }
-  #nav-title:active + #nav-title{
-    display: none;
+    display: block;  
+    overflow-y: scroll;
+    overflow-x:hidden;
   }
 }
