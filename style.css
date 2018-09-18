@@ -290,10 +290,12 @@ code{
     padding-bottom: 0px;
     height: 80px;
     width: 100vw; 
+    border-right: none;
     border-bottom: ridge 3px green;
    }
   #navbar h1 {
     max-width: 300px;
+  }
  #nav-title {
     padding:0px;
     text-align: center;
